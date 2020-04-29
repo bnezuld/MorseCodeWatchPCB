@@ -1,0 +1,161 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5E4DA130
+P 1200 4150
+F 0 "J1" H 1257 4617 50  0000 C CNN
+F 1 "USB_B_Micro" H 1257 4526 50  0000 C CNN
+F 2 "" H 1350 4100 50  0001 C CNN
+F 3 "~" H 1350 4100 50  0001 C CNN
+	1    1200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_2_Open JP1
+U 1 1 5E4DC86D
+P 1750 5500
+F 0 "JP1" H 1750 5735 50  0000 C CNN
+F 1 "Jumper_2_Open" H 1750 5644 50  0000 C CNN
+F 2 "" H 1750 5500 50  0001 C CNN
+F 3 "~" H 1750 5500 50  0001 C CNN
+	1    1750 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5E4DDC6D
+P 2200 4550
+F 0 "D1" H 2193 4766 50  0000 C CNN
+F 1 "LED" H 2193 4675 50  0000 C CNN
+F 2 "" H 2200 4550 50  0001 C CNN
+F 3 "~" H 2200 4550 50  0001 C CNN
+	1    2200 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5E4DEB11
+P 1950 4200
+F 0 "C1" H 2065 4246 50  0000 L CNN
+F 1 "C" H 2065 4155 50  0000 L CNN
+F 2 "" H 1988 4050 50  0001 C CNN
+F 3 "~" H 1950 4200 50  0001 C CNN
+	1    1950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5E4E0C5A
+P 6250 4200
+F 0 "C2" H 6365 4246 50  0000 L CNN
+F 1 "C" H 6365 4155 50  0000 L CNN
+F 2 "" H 6288 4050 50  0001 C CNN
+F 3 "~" H 6250 4200 50  0001 C CNN
+	1    6250 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E4E11CC
+P 2750 4150
+F 0 "R2" H 2820 4196 50  0000 L CNN
+F 1 "R" H 2820 4105 50  0000 L CNN
+F 2 "" V 2680 4150 50  0001 C CNN
+F 3 "~" H 2750 4150 50  0001 C CNN
+	1    2750 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E4E21A5
+P 2500 4550
+F 0 "R1" H 2570 4596 50  0000 L CNN
+F 1 "R" H 2570 4505 50  0000 L CNN
+F 2 "" V 2430 4550 50  0001 C CNN
+F 3 "~" H 2500 4550 50  0001 C CNN
+	1    2500 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E4E29FF
+P 5050 4250
+F 0 "R4" H 5120 4296 50  0000 L CNN
+F 1 "R" H 5120 4205 50  0000 L CNN
+F 2 "" V 4980 4250 50  0001 C CNN
+F 3 "~" H 5050 4250 50  0001 C CNN
+	1    5050 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E4E302C
+P 5050 3900
+F 0 "R3" H 5120 3946 50  0000 L CNN
+F 1 "R" H 5120 3855 50  0000 L CNN
+F 2 "" V 4980 3900 50  0001 C CNN
+F 3 "~" H 5050 3900 50  0001 C CNN
+	1    5050 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Battery_Management:MCP73831-2-OT U1
+U 1 1 5E4E5A4D
+P 3450 4250
+F 0 "U1" H 3450 4731 50  0000 C CNN
+F 1 "MCP73831-2-OT" H 3450 4640 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3500 4000 50  0001 L CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 3300 4200 50  0001 C CNN
+	1    3450 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5E4DD022
+P 2450 4150
+F 0 "D2" H 2443 4366 50  0000 C CNN
+F 1 "LED" H 2443 4275 50  0000 C CNN
+F 2 "" H 2450 4150 50  0001 C CNN
+F 3 "~" H 2450 4150 50  0001 C CNN
+	1    2450 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1500 3950 1950 3950
+Wire Wire Line
+	1950 4050 1950 3950
+Connection ~ 1950 3950
+Wire Wire Line
+	1950 3950 2300 3950
+Wire Wire Line
+	2300 3950 2300 4150
+Connection ~ 2300 3950
+Wire Wire Line
+	2300 3950 3450 3950
+Wire Wire Line
+	1200 4550 1200 4900
+Text Label 1200 4850 0    50   ~ 0
+GND
+Wire Wire Line
+	3450 4550 3450 4850
+Text Label 3450 4850 0    50   ~ 0
+GND
+Text Label 1500 3950 0    50   ~ 0
+VCC
+Text Label 5200 3900 0    50   ~ 0
+VCC
+$EndSCHEMATC
