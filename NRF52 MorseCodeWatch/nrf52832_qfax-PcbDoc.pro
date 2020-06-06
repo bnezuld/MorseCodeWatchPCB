@@ -1,4 +1,4 @@
-update=4/3/2020 12:14:26 PM
+update=5/1/2020 10:21:42 AM
 version=1
 last_client=kicad
 [general]
@@ -22,7 +22,7 @@ AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.254
+MinTrackWidth=0.15
 MinViaDiameter=0.889
 MinViaDrill=0.508
 MinMicroViaDiameter=0.508
@@ -57,7 +57,7 @@ OthersTextUpright=1
 SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
@@ -229,6 +229,17 @@ Enabled=0
 Name=Default
 Clearance=0.1524
 TrackWidth=0.254
+ViaDiameter=0.889
+ViaDrill=0.635
+uViaDiameter=0.508
+uViaDrill=0.127
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=slim
+Clearance=0.1524
+TrackWidth=0.15
 ViaDiameter=0.889
 ViaDrill=0.635
 uViaDiameter=0.508

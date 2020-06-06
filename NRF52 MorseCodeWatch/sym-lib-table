@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name MorseCodeWatch-eagle-import)(type Legacy)(uri C:/Users/bnezu/Documents/TestCircuit/MorseCodeWatch-eagle-import.lib)(options "")(descr ""))
+  (lib (name nrf52832_qfaa-SchDoc-rescue)(type Legacy)(uri ${KIPRJMOD}/nrf52832_qfaa-SchDoc-rescue.lib)(options "")(descr ""))
+  (lib (name MorseCodeWatch-rescue)(type Legacy)(uri C:/Users/Brandon/Documents/GitHub/MorseCodeWatchPCB/TestCircuit/MorseCodeWatch-rescue.lib)(options "")(descr ""))
 )

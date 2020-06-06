@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:USB_B_Micro J1
+L MorseCodeWatch-rescue:USB_B_Micro-Connector J1
 U 1 1 5E4DA130
 P 3650 6950
 F 0 "J1" H 3707 7417 50  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "~" H 3800 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D2
+L MorseCodeWatch-rescue:LED-Device D2
 U 1 1 5E4DDC6D
 P 4900 7500
 F 0 "D2" H 4893 7716 50  0000 C CNN
@@ -36,7 +36,7 @@ F 3 "~" H 4900 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
+L MorseCodeWatch-rescue:C-Device C1
 U 1 1 5E4DEB11
 P 4400 7000
 F 0 "C1" H 4515 7046 50  0000 L CNN
@@ -47,7 +47,7 @@ F 3 "~" H 4400 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
+L MorseCodeWatch-rescue:R-Device R1
 U 1 1 5E4E11CC
 P 5200 6950
 F 0 "R1" H 5270 6996 50  0000 L CNN
@@ -58,7 +58,7 @@ F 3 "~" H 5200 6950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R2
+L MorseCodeWatch-rescue:R-Device R2
 U 1 1 5E4E21A5
 P 5200 7500
 F 0 "R2" H 5270 7546 50  0000 L CNN
@@ -69,7 +69,7 @@ F 3 "~" H 5200 7500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R3
+L MorseCodeWatch-rescue:R-Device R3
 U 1 1 5E4E302C
 P 5700 7700
 F 0 "R3" V 5907 7700 50  0000 C CNN
@@ -80,7 +80,7 @@ F 3 "~" H 5700 7700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Battery_Management:MCP73831-2-OT U1
+L MorseCodeWatch-rescue:MCP73831-2-OT-Battery_Management U1
 U 1 1 5E4E5A4D
 P 5900 7050
 F 0 "U1" H 5900 7531 50  0000 C CNN
@@ -91,7 +91,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 5750 7000 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D1
+L MorseCodeWatch-rescue:LED-Device D1
 U 1 1 5E4DD022
 P 4900 6950
 F 0 "D1" H 4893 7166 50  0000 C CNN
@@ -114,7 +114,7 @@ Connection ~ 4750 6750
 Wire Wire Line
 	4750 6750 5900 6750
 $Comp
-L power:GND #PWR0101
+L MorseCodeWatch-rescue:GND-power #PWR0101
 U 1 1 5E522086
 P 4400 7800
 F 0 "#PWR0101" H 4400 7550 50  0001 C CNN
@@ -125,7 +125,7 @@ F 3 "" H 4400 7800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0102
+L MorseCodeWatch-rescue:GND-power #PWR0102
 U 1 1 5E5235BF
 P 4700 7800
 F 0 "#PWR0102" H 4700 7550 50  0001 C CNN
@@ -136,7 +136,7 @@ F 3 "" H 4700 7800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0103
+L MorseCodeWatch-rescue:GND-power #PWR0103
 U 1 1 5E52368F
 P 6500 7800
 F 0 "#PWR0103" H 6500 7550 50  0001 C CNN
@@ -147,7 +147,7 @@ F 3 "" H 6500 7800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0104
+L MorseCodeWatch-rescue:GND-power #PWR0104
 U 1 1 5E5236C3
 P 7250 7800
 F 0 "#PWR0104" H 7250 7550 50  0001 C CNN
@@ -158,7 +158,7 @@ F 3 "" H 7250 7800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0105
+L MorseCodeWatch-rescue:GND-power #PWR0105
 U 1 1 5E52612F
 P 3650 7800
 F 0 "#PWR0105" H 3650 7550 50  0001 C CNN
@@ -195,7 +195,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 7350 5900 7700
 $Comp
-L Connector:Conn_01x02_Male J2
+L MorseCodeWatch-rescue:Conn_01x02_Male-Connector J2
 U 1 1 5E52E8A2
 P 8150 6950
 F 0 "J2" H 8258 7131 50  0000 C CNN
@@ -231,7 +231,7 @@ Connection ~ 7250 5450
 Wire Wire Line
 	7250 5450 7250 5350
 $Comp
-L power:GND #PWR0107
+L MorseCodeWatch-rescue:GND-power #PWR0107
 U 1 1 5E546EB1
 P 11100 6550
 F 0 "#PWR0107" H 11100 6300 50  0001 C CNN
@@ -292,7 +292,7 @@ STAT
 Text Label 5500 7350 0    50   ~ 0
 PROG
 $Comp
-L Connector:Conn_01x04_Female J6
+L MorseCodeWatch-rescue:Conn_01x04_Female-Connector J6
 U 1 1 5E58E21D
 P 1350 7650
 F 0 "J6" H 1378 7626 50  0000 L CNN
@@ -319,7 +319,7 @@ SCL
 Text Label 10450 6300 3    50   ~ 0
 SDA
 $Comp
-L Memory_EEPROM:CAT24C256 U3
+L MorseCodeWatch-rescue:CAT24C256-Memory_EEPROM U3
 U 1 1 5E5BF4CC
 P 9400 6750
 F 0 "U3" H 9400 7231 50  0000 C CNN
@@ -341,7 +341,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 6450 9200 6450
 $Comp
-L Device:R R5
+L MorseCodeWatch-rescue:R-Device R5
 U 1 1 5E5CE454
 P 9700 6450
 F 0 "R5" H 9770 6496 50  0000 L CNN
@@ -352,7 +352,7 @@ F 3 "~" H 9700 6450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R4
+L MorseCodeWatch-rescue:R-Device R4
 U 1 1 5E5CFD10
 P 9700 6350
 F 0 "R4" H 9770 6396 50  0000 L CNN
@@ -416,7 +416,7 @@ Wire Wire Line
 Wire Wire Line
 	9350 4850 9350 4350
 $Comp
-L MCU_ST_STM32F1:STM32F101CBTx U2
+L MorseCodeWatch-rescue:STM32F101CBTx-MCU_ST_STM32F1 U2
 U 1 1 5E5391EB
 P 9550 5450
 F 0 "U2" H 9500 3861 50  0000 C CNN
@@ -1127,7 +1127,7 @@ Wire Wire Line
 Text Label 750  2650 0    50   ~ 0
 VBAT
 $Comp
-L Connector_Generic:Conn_01x03 J4
+L MorseCodeWatch-rescue:Conn_01x03-Connector_Generic J4
 U 1 1 5E766726
 P 10400 4000
 F 0 "J4" H 10318 3675 50  0000 C CNN
@@ -1152,7 +1152,7 @@ Wire Wire Line
 Text Label 950  7850 0    50   ~ 0
 SWCLK
 $Comp
-L Switch:SW_DIP_x01 SW1
+L MorseCodeWatch-rescue:SW_DIP_x01-Switch SW1
 U 1 1 5EA3EDA2
 P 7250 6400
 F 0 "SW1" V 7296 6270 50  0000 R CNN
@@ -1193,7 +1193,7 @@ Wire Wire Line
 Wire Wire Line
 	6800 7100 6800 6950
 $Comp
-L power:GND #PWR0106
+L MorseCodeWatch-rescue:GND-power #PWR0106
 U 1 1 5E52A908
 P 6800 7800
 F 0 "#PWR0106" H 6800 7550 50  0001 C CNN
@@ -1204,7 +1204,7 @@ F 3 "" H 6800 7800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
+L MorseCodeWatch-rescue:C-Device C2
 U 1 1 5E4E0C5A
 P 6800 7250
 F 0 "C2" H 6915 7296 50  0000 L CNN
@@ -1215,7 +1215,7 @@ F 3 "~" H 6800 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148 D6
+L MorseCodeWatch-rescue:1N4148-Diode D6
 U 1 1 5EB310A8
 P 9400 2700
 F 0 "D6" H 9400 2916 50  0000 C CNN
@@ -1226,7 +1226,7 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9400 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D3
+L MorseCodeWatch-rescue:LED-Device D3
 U 1 1 5EBDB4CC
 P 7650 2300
 F 0 "D3" H 7643 2516 50  0000 C CNN
@@ -1237,7 +1237,7 @@ F 3 "~" H 7650 2300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D4
+L MorseCodeWatch-rescue:LED-Device D4
 U 1 1 5EBE6B40
 P 8050 2300
 F 0 "D4" H 8043 2516 50  0000 C CNN
@@ -1251,7 +1251,7 @@ Wire Wire Line
 	9750 2700 9550 2700
 Connection ~ 9750 2700
 $Comp
-L Diode:1N4148 D8
+L MorseCodeWatch-rescue:1N4148-Diode D8
 U 1 1 5EB481F6
 P 9400 3300
 F 0 "D8" H 9400 3516 50  0000 C CNN
@@ -1262,7 +1262,7 @@ F 3 "" H 9400 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148 D7
+L MorseCodeWatch-rescue:1N4148-Diode D7
 U 1 1 5EB3C720
 P 9400 3000
 F 0 "D7" H 9400 3216 50  0000 C CNN
@@ -1273,7 +1273,7 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9400 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148 D5
+L MorseCodeWatch-rescue:1N4148-Diode D5
 U 1 1 5EAF45E0
 P 9400 2400
 F 0 "D5" H 9400 2616 50  0000 C CNN
@@ -1284,7 +1284,7 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9400 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148 D9
+L MorseCodeWatch-rescue:1N4148-Diode D9
 U 1 1 5ECD1C26
 P 900 3050
 F 0 "D9" H 900 2834 50  0000 C CNN
@@ -1297,7 +1297,7 @@ $EndComp
 Connection ~ 1050 3050
 Connection ~ 9550 2400
 $Comp
-L Connector_Generic:Conn_01x03 J5
+L MorseCodeWatch-rescue:Conn_01x03-Connector_Generic J5
 U 1 1 5ED492AB
 P 9250 4150
 F 0 "J5" V 9214 3962 50  0000 R CNN
@@ -1324,7 +1324,7 @@ Connection ~ 2350 4800
 Wire Wire Line
 	2350 4800 2350 5000
 $Comp
-L Device:R R10
+L MorseCodeWatch-rescue:R-Device R10
 U 1 1 5E920FA0
 P 2350 5150
 F 0 "R10" H 2420 5196 50  0000 L CNN
@@ -1337,7 +1337,7 @@ $EndComp
 Text Label 2350 4800 0    50   ~ 0
 TOG-AHLB
 $Comp
-L Device:C C7
+L MorseCodeWatch-rescue:C-Device C7
 U 1 1 5E9084D6
 P 1950 5150
 F 0 "C7" H 2065 5196 50  0000 L CNN
@@ -1378,7 +1378,7 @@ MainSwitch
 Wire Wire Line
 	1000 4800 850  4800
 $Comp
-L Sensor_Touch:AT42QT1010-TSHR U6
+L MorseCodeWatch-rescue:AT42QT1010-TSHR-Sensor_Touch U6
 U 1 1 5E83AF66
 P 1400 4700
 F 0 "U6" H 1400 5181 50  0000 C CNN
