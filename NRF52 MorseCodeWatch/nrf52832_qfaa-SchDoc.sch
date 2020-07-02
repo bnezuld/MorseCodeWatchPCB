@@ -830,7 +830,7 @@ L MorseCodeWatch-rescue:R-Device R4
 U 1 1 5E4E11CC
 P 3450 2950
 F 0 "R4" H 3520 2996 50  0000 L CNN
-F 1 "R" H 3520 2905 50  0000 L CNN
+F 1 "R 47Ω" H 3520 2905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 3380 2950 50  0001 C CNN
 F 3 "~" H 3450 2950 50  0001 C CNN
 	1    3450 2950
@@ -841,7 +841,7 @@ L MorseCodeWatch-rescue:R-Device R5
 U 1 1 5E4E21A5
 P 3450 3500
 F 0 "R5" H 3520 3546 50  0000 L CNN
-F 1 "R" H 3520 3455 50  0000 L CNN
+F 1 "R 47Ω" H 3520 3455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 3380 3500 50  0001 C CNN
 F 3 "~" H 3450 3500 50  0001 C CNN
 	1    3450 3500
@@ -1080,15 +1080,15 @@ VDD_nRF
 Wire Wire Line
 	7450 6950 7400 6950
 Text Label 4950 9450 2    50   ~ 0
-GND
+Motor_Mode
 Text Label 7850 9400 0    50   ~ 0
 Motor2_out
 Text Label 7850 8850 0    50   ~ 0
 Motor1_out
 Text Label 4950 8950 2    50   ~ 0
-Motor1
+Motor1_PHASE
 Text Label 4950 9200 2    50   ~ 0
-Motor2
+Motor2_PHASE
 Text Label 6350 9200 0    50   ~ 0
 Motor2_out
 Text Label 6350 8950 0    50   ~ 0
@@ -1106,10 +1106,10 @@ F 3 "~" H 7650 9310 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7350 9400 7150 9400
-Text Label 7150 9400 0    50   ~ 0
-GND
-Text Label 7150 8850 0    50   ~ 0
-GND
+Text Label 7150 9400 2    50   ~ 0
+Motor2_outB
+Text Label 7150 8850 2    50   ~ 0
+Motor1_outB
 Wire Wire Line
 	7350 8850 7150 8850
 $Comp
@@ -1164,20 +1164,16 @@ Wire Wire Line
 	7450 6850 7400 6850
 Wire Wire Line
 	7400 6750 7450 6750
-Text Label 7150 7650 2    50   ~ 0
-MainSwitch
-Wire Wire Line
-	7400 7650 7150 7650
 Text Label 7100 7450 2    50   ~ 0
-Motor1
+Motor1_ENBL
 Text Label 7100 7550 2    50   ~ 0
-Motor2
-Text Label 7200 7350 2    50   ~ 0
+Motor2_ENBL
+Text Label 7200 7250 2    50   ~ 0
 Motor_Sleep
 Wire Wire Line
 	7100 7450 7400 7450
 Wire Wire Line
-	7400 7350 7200 7350
+	7400 7250 7200 7250
 Wire Wire Line
 	7400 7550 7100 7550
 Wire Wire Line
@@ -1191,9 +1187,9 @@ Motor1_outB
 Text Label 6200 9300 0    50   ~ 0
 Motor2_outB
 Text Label 4950 9300 2    50   ~ 0
-GND
+Motor2_ENBL
 Text Label 4950 9050 2    50   ~ 0
-GND
+Motor1_ENBL
 Text Label 4950 9550 2    50   ~ 0
 Motor_Sleep
 Text Label 7050 5000 0    50   ~ 0
@@ -1213,4 +1209,29 @@ F 3 "" H 6850 5000 50  0001 C CNN
 $EndComp
 Text Label 5700 8700 0    50   ~ 0
 VDD_nRF
+Text Label 7150 7350 2    50   ~ 0
+Motor_Mode
+Wire Wire Line
+	7400 7650 7150 7650
+Text Label 7150 7650 2    50   ~ 0
+MainSwitch
+Wire Wire Line
+	7400 7350 7150 7350
+$Comp
+L MorseCodeWatch-rescue:C-Device C18
+U 1 1 5EE48B3B
+P 5550 8300
+F 0 "C18" H 5665 8346 50  0000 L CNN
+F 1 "C 10uf" H 5665 8255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5588 8150 50  0001 C CNN
+F 3 "~" H 5550 8300 50  0001 C CNN
+	1    5550 8300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 8700 5700 8300
+Wire Wire Line
+	5400 8300 5050 8300
+Text Label 5050 8300 0    50   ~ 0
+GND
 $EndSCHEMATC
