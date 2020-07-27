@@ -1,7 +1,6 @@
 # MorseCodeWatchPCB
 
-KiCad PCB built for my MorseCodeProject
-[MorseCodeProject](http://github.com)
+KiCad PCB built for my [Morse Code Smart Watch project](https://github.com/bnezuld/ble_app_morsecode_watch)
 
 with a [Bill of Material](https://github.com/bnezuld/MorseCodeWatchPCB/blob/master/MorseCodeWatch_bom.csv) of:
 | Bill of material           |                         |                                                                                |               |
