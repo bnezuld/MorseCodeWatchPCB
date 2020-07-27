@@ -1293,24 +1293,11 @@ Wire Wire Line
 Connection ~ 5450 1050
 Wire Wire Line
 	5450 1050 5450 1200
-$Comp
-L nrf52832_qfaa-SchDoc-rescue:C-Device-MorseCodeWatch-rescue C19
-U 1 1 5F374AB6
-P 5800 1950
-F 0 "C19" H 5915 1996 50  0000 L CNN
-F 1 "C 1uf" H 5915 1905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 5838 1800 50  0001 C CNN
-F 3 "~" H 5800 1950 50  0001 C CNN
-	1    5800 1950
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5500 1950 5650 1950
 Connection ~ 5500 1950
 Wire Wire Line
 	5500 1950 5500 2100
-Wire Wire Line
-	5950 1950 5950 1500
 Wire Wire Line
 	5950 1500 5850 1500
 Wire Wire Line
@@ -1356,6 +1343,17 @@ Wire Wire Line
 	4900 5600 4650 5600
 Wire Wire Line
 	4650 5600 4650 5650
+$Comp
+L nrf52832_qfaa-SchDoc-rescue:C-Device-MorseCodeWatch-rescue C19
+U 1 1 5F374AB6
+P 5800 1950
+F 0 "C19" H 5915 1996 50  0000 L CNN
+F 1 "C 1uf" H 5915 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5838 1800 50  0001 C CNN
+F 3 "~" H 5800 1950 50  0001 C CNN
+	1    5800 1950
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
 	4900 5700 4650 5700
 Wire Wire Line
@@ -1363,4 +1361,6 @@ Wire Wire Line
 Connection ~ 4650 5650
 Text Label 5400 5900 0    50   ~ 0
 P0.21
+Wire Wire Line
+	5950 1500 5950 1950
 $EndSCHEMATC
