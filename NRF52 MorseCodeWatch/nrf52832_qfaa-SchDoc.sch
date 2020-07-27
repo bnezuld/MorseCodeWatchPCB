@@ -201,8 +201,6 @@ Text Label 8600 7450 0    50   ~ 0
 P0.31AIN7
 Text Label 6200 5800 2    50   ~ 0
 SWDIO
-Text Label 6200 5700 2    50   ~ 0
-SWDCLK
 Text Label 8600 6450 0    50   ~ 0
 P0.21
 Text Label 7250 4800 2    50   ~ 0
@@ -558,38 +556,19 @@ Wire Wire Line
 	8950 4750 8600 4750
 Text Label 8600 5550 0    50   ~ 0
 XC2
-Wire Wire Line
-	5550 5800 6200 5800
-Wire Wire Line
-	5550 5700 6200 5700
 $Comp
 L nrf52832_qfaa-SchDoc-rescue:GND-power #PWR0107
 U 1 1 5E9AEE25
-P 5550 5900
-F 0 "#PWR0107" H 5550 5650 50  0001 C CNN
-F 1 "GND" V 5555 5772 50  0000 R CNN
-F 2 "" H 5550 5900 50  0001 C CNN
-F 3 "" H 5550 5900 50  0001 C CNN
-	1    5550 5900
-	0    -1   -1   0   
+P 4650 5650
+F 0 "#PWR0107" H 4650 5400 50  0001 C CNN
+F 1 "GND" V 4655 5522 50  0000 R CNN
+F 2 "" H 4650 5650 50  0001 C CNN
+F 3 "" H 4650 5650 50  0001 C CNN
+	1    4650 5650
+	0    1    1    0   
 $EndComp
-Text Label 5550 5600 0    50   ~ 0
+Text Label 4900 5500 2    50   ~ 0
 VDD_nRF
-$Comp
-L nrf52832_qfaa-SchDoc-rescue:Conn_01x04-Connector_Generic J1
-U 1 1 5E9A9BA1
-P 5350 5800
-F 0 "J1" H 5268 5375 50  0000 C CNN
-F 1 "Conn_01x04" H 5268 5466 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical_SMD_Pin1Right" H 5350 5800 50  0001 C CNN
-F 3 "~" H 5350 5800 50  0001 C CNN
-	1    5350 5800
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7400 5650 6200 5650
-Wire Wire Line
-	6200 5650 6200 5700
 Wire Wire Line
 	6200 5800 6200 5850
 Wire Wire Line
@@ -793,7 +772,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 7500 3000 7800
 $Comp
-L MorseCodeWatch-rescue:USB_B_Micro-Connector J2
+L nrf52832_qfaa-SchDoc-rescue:USB_B_Micro-Connector-MorseCodeWatch-rescue J2
 U 1 1 5E4DA130
 P 1900 2950
 F 0 "J2" H 1957 3417 50  0000 C CNN
@@ -804,7 +783,7 @@ F 3 "~" H 2050 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MorseCodeWatch-rescue:LED-Device D2
+L nrf52832_qfaa-SchDoc-rescue:LED-Device-MorseCodeWatch-rescue D2
 U 1 1 5E4DDC6D
 P 3150 3500
 F 0 "D2" H 3143 3716 50  0000 C CNN
@@ -815,7 +794,7 @@ F 3 "~" H 3150 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MorseCodeWatch-rescue:C-Device C16
+L nrf52832_qfaa-SchDoc-rescue:C-Device-MorseCodeWatch-rescue C16
 U 1 1 5E4DEB11
 P 2650 3000
 F 0 "C16" H 2765 3046 50  0000 L CNN
@@ -826,7 +805,7 @@ F 3 "~" H 2650 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MorseCodeWatch-rescue:R-Device R4
+L nrf52832_qfaa-SchDoc-rescue:R-Device-MorseCodeWatch-rescue R4
 U 1 1 5E4E11CC
 P 3450 2950
 F 0 "R4" H 3520 2996 50  0000 L CNN
@@ -837,7 +816,7 @@ F 3 "~" H 3450 2950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MorseCodeWatch-rescue:R-Device R5
+L nrf52832_qfaa-SchDoc-rescue:R-Device-MorseCodeWatch-rescue R5
 U 1 1 5E4E21A5
 P 3450 3500
 F 0 "R5" H 3520 3546 50  0000 L CNN
@@ -848,7 +827,7 @@ F 3 "~" H 3450 3500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MorseCodeWatch-rescue:R-Device R6
+L nrf52832_qfaa-SchDoc-rescue:R-Device-MorseCodeWatch-rescue R6
 U 1 1 5E4E302C
 P 3950 3700
 F 0 "R6" V 4157 3700 50  0000 C CNN
@@ -859,7 +838,7 @@ F 3 "~" H 3950 3700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MorseCodeWatch-rescue:MCP73831-2-OT-Battery_Management U4
+L nrf52832_qfaa-SchDoc-rescue:MCP73831-2-OT-Battery_Management-MorseCodeWatch-rescue U4
 U 1 1 5E4E5A4D
 P 4150 3050
 F 0 "U4" H 4150 3531 50  0000 C CNN
@@ -870,7 +849,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 4000 3000 
 	1    0    0    -1  
 $EndComp
 $Comp
-L MorseCodeWatch-rescue:LED-Device D1
+L nrf52832_qfaa-SchDoc-rescue:LED-Device-MorseCodeWatch-rescue D1
 U 1 1 5E4DD022
 P 3150 2950
 F 0 "D1" H 3143 3166 50  0000 C CNN
@@ -893,7 +872,7 @@ Connection ~ 3000 2750
 Wire Wire Line
 	3000 2750 4150 2750
 $Comp
-L MorseCodeWatch-rescue:GND-power #PWR0110
+L nrf52832_qfaa-SchDoc-rescue:GND-power-MorseCodeWatch-rescue #PWR0110
 U 1 1 5E522086
 P 2650 3800
 F 0 "#PWR0110" H 2650 3550 50  0001 C CNN
@@ -904,7 +883,7 @@ F 3 "" H 2650 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MorseCodeWatch-rescue:GND-power #PWR0111
+L nrf52832_qfaa-SchDoc-rescue:GND-power-MorseCodeWatch-rescue #PWR0111
 U 1 1 5E5235BF
 P 2950 3800
 F 0 "#PWR0111" H 2950 3550 50  0001 C CNN
@@ -915,7 +894,7 @@ F 3 "" H 2950 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MorseCodeWatch-rescue:GND-power #PWR0112
+L nrf52832_qfaa-SchDoc-rescue:GND-power-MorseCodeWatch-rescue #PWR0112
 U 1 1 5E52368F
 P 4750 3800
 F 0 "#PWR0112" H 4750 3550 50  0001 C CNN
@@ -926,7 +905,7 @@ F 3 "" H 4750 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MorseCodeWatch-rescue:GND-power #PWR0113
+L nrf52832_qfaa-SchDoc-rescue:GND-power-MorseCodeWatch-rescue #PWR0113
 U 1 1 5E5236C3
 P 5500 3800
 F 0 "#PWR0113" H 5500 3550 50  0001 C CNN
@@ -937,7 +916,7 @@ F 3 "" H 5500 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MorseCodeWatch-rescue:GND-power #PWR0114
+L nrf52832_qfaa-SchDoc-rescue:GND-power-MorseCodeWatch-rescue #PWR0114
 U 1 1 5E52612F
 P 1900 3800
 F 0 "#PWR0114" H 1900 3550 50  0001 C CNN
@@ -974,14 +953,14 @@ Wire Wire Line
 Wire Wire Line
 	4150 3350 4150 3700
 $Comp
-L MorseCodeWatch-rescue:Conn_01x02_Male-Connector J3
+L nrf52832_qfaa-SchDoc-rescue:Conn_01x02_Male-Connector-MorseCodeWatch-rescue J3
 U 1 1 5E52E8A2
-P 6400 2950
-F 0 "J3" H 6508 3131 50  0000 C CNN
-F 1 "Conn_01x02_Male LiPo Battery" H 6508 3040 50  0000 C CNN
-F 2 "Connector_JST:JST_ACH_BM02B-ACHSS-GAN-ETF_1x02-1MP_P1.20mm_Vertical" H 6400 2950 50  0001 C CNN
-F 3 "~" H 6400 2950 50  0001 C CNN
-	1    6400 2950
+P 3350 5100
+F 0 "J3" H 3458 5281 50  0000 C CNN
+F 1 "Conn_01x02_Male LiPo Battery" H 3458 5190 50  0000 C CNN
+F 2 "Connector_JST:JST_ACH_BM02B-ACHSS-GAN-ETF_1x02-1MP_P1.20mm_Vertical" H 3350 5100 50  0001 C CNN
+F 3 "~" H 3350 5100 50  0001 C CNN
+	1    3350 5100
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1014,7 +993,7 @@ STAT
 Text Label 3750 3350 0    50   ~ 0
 PROG
 $Comp
-L MorseCodeWatch-rescue:SW_DIP_x01-Switch SW1
+L nrf52832_qfaa-SchDoc-rescue:SW_DIP_x01-Switch-MorseCodeWatch-rescue SW1
 U 1 1 5EA3EDA2
 P 5500 2400
 F 0 "SW1" V 5546 2270 50  0000 R CNN
@@ -1040,7 +1019,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 3100 5050 2950
 $Comp
-L MorseCodeWatch-rescue:GND-power #PWR0116
+L nrf52832_qfaa-SchDoc-rescue:GND-power-MorseCodeWatch-rescue #PWR0116
 U 1 1 5E52A908
 P 5050 3800
 F 0 "#PWR0116" H 5050 3550 50  0001 C CNN
@@ -1051,7 +1030,7 @@ F 3 "" H 5050 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MorseCodeWatch-rescue:C-Device C17
+L nrf52832_qfaa-SchDoc-rescue:C-Device-MorseCodeWatch-rescue C17
 U 1 1 5E4E0C5A
 P 5050 3250
 F 0 "C17" H 5165 3296 50  0000 L CNN
@@ -1075,16 +1054,12 @@ Text Label 2750 7800 2    50   ~ 0
 VDD_nRF
 Text Label 4150 8400 0    50   ~ 0
 GND
-Text Label 5500 2100 0    50   ~ 0
+Text Label 5450 900  2    50   ~ 0
 VDD_nRF
 Wire Wire Line
 	7450 6950 7400 6950
 Text Label 4950 9450 2    50   ~ 0
 Motor_Mode
-Text Label 7850 9400 0    50   ~ 0
-Motor2_out
-Text Label 7850 8850 0    50   ~ 0
-Motor1_out
 Text Label 4950 8950 2    50   ~ 0
 Motor1_PHASE
 Text Label 4950 9200 2    50   ~ 0
@@ -1093,36 +1068,6 @@ Text Label 6350 9200 0    50   ~ 0
 Motor2_out
 Text Label 6350 8950 0    50   ~ 0
 Motor1_out
-$Comp
-L Default:Motor_DC M2
-U 1 1 5EAF8A4C
-P 7650 9400
-F 0 "M2" V 7355 9350 50  0000 C CNN
-F 1 "Motor_DC" V 7446 9350 50  0000 C CNN
-F 2 "Connector_JST:JST_ACH_BM02B-ACHSS-GAN-ETF_1x02-1MP_P1.20mm_Vertical" H 7650 9310 50  0001 C CNN
-F 3 "~" H 7650 9310 50  0001 C CNN
-	1    7650 9400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7350 9400 7150 9400
-Text Label 7150 9400 2    50   ~ 0
-Motor2_outB
-Text Label 7150 8850 2    50   ~ 0
-Motor1_outB
-Wire Wire Line
-	7350 8850 7150 8850
-$Comp
-L Default:Motor_DC M1
-U 1 1 5EAF5DD3
-P 7650 8850
-F 0 "M1" V 7355 8800 50  0000 C CNN
-F 1 "Motor_DC" V 7446 8800 50  0000 C CNN
-F 2 "Connector_JST:JST_ACH_BM02B-ACHSS-GAN-ETF_1x02-1MP_P1.20mm_Vertical" H 7650 8760 50  0001 C CNN
-F 3 "~" H 7650 8760 50  0001 C CNN
-	1    7650 8850
-	0    1    1    0   
-$EndComp
 Text Label 5700 9900 0    50   ~ 0
 GND
 Wire Wire Line
@@ -1218,7 +1163,7 @@ MainSwitch
 Wire Wire Line
 	7400 7350 7150 7350
 $Comp
-L MorseCodeWatch-rescue:C-Device C18
+L nrf52832_qfaa-SchDoc-rescue:C-Device-MorseCodeWatch-rescue C18
 U 1 1 5EE48B3B
 P 5550 8300
 F 0 "C18" H 5665 8346 50  0000 L CNN
@@ -1234,4 +1179,188 @@ Wire Wire Line
 	5400 8300 5050 8300
 Text Label 5050 8300 0    50   ~ 0
 GND
+$Comp
+L Device:Battery_Cell J5
+U 1 1 5F205BA0
+P 6400 3050
+F 0 "J5" H 6518 3146 50  0000 L CNN
+F 1 "Battery_Cell" H 6518 3055 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_3034_1x20mm" V 6400 3110 50  0001 C CNN
+F 3 "~" V 6400 3110 50  0001 C CNN
+	1    6400 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2950 6200 2850
+Wire Wire Line
+	6200 2850 6400 2850
+Wire Wire Line
+	6200 3050 6200 3150
+Wire Wire Line
+	6200 3150 6400 3150
+Text Label 3150 5100 2    50   ~ 0
+TouchPad
+Text Label 3150 5200 2    50   ~ 0
+TouchPad
+$Comp
+L nrf52832_qfaa-SchDoc-rescue:Conn_01x02_Male-Connector-MorseCodeWatch-rescue J6
+U 1 1 5F25EA0B
+P 9050 9050
+F 0 "J6" H 9158 9231 50  0000 C CNN
+F 1 "Conn_01x02_Male LiPo Battery" H 9158 9140 50  0000 C CNN
+F 2 "Connector_JST:JST_ACH_BM02B-ACHSS-GAN-ETF_1x02-1MP_P1.20mm_Vertical" H 9050 9050 50  0001 C CNN
+F 3 "~" H 9050 9050 50  0001 C CNN
+	1    9050 9050
+	-1   0    0    -1  
+$EndComp
+Text Label 7150 9400 2    50   ~ 0
+Motor2_outB
+Wire Wire Line
+	7350 9400 7150 9400
+$Comp
+L nrf52832_qfaa-SchDoc-rescue:Motor_DC-Default M2
+U 1 1 5EAF8A4C
+P 7650 9400
+F 0 "M2" V 7355 9350 50  0000 C CNN
+F 1 "Motor_DC" V 7446 9350 50  0000 C CNN
+F 2 "Connector_JST:JST_ACH_BM02B-ACHSS-GAN-ETF_1x02-1MP_P1.20mm_Vertical" H 7650 9310 50  0001 C CNN
+F 3 "~" H 7650 9310 50  0001 C CNN
+	1    7650 9400
+	0    1    1    0   
+$EndComp
+Text Label 7850 9400 0    50   ~ 0
+Motor2_out
+Wire Wire Line
+	7350 8850 7150 8850
+$Comp
+L nrf52832_qfaa-SchDoc-rescue:Motor_DC-Default M1
+U 1 1 5EAF5DD3
+P 7650 8850
+F 0 "M1" V 7355 8800 50  0000 C CNN
+F 1 "Motor_DC" V 7446 8800 50  0000 C CNN
+F 2 "Connector_JST:JST_ACH_BM02B-ACHSS-GAN-ETF_1x02-1MP_P1.20mm_Vertical" H 7650 8760 50  0001 C CNN
+F 3 "~" H 7650 8760 50  0001 C CNN
+	1    7650 8850
+	0    1    1    0   
+$EndComp
+Text Label 7150 8850 2    50   ~ 0
+Motor1_outB
+Text Label 7850 8850 0    50   ~ 0
+Motor1_out
+Text Label 8850 9050 2    50   ~ 0
+Motor1_out
+Text Label 8850 9150 2    50   ~ 0
+Motor1_outB
+$Comp
+L Regulator_Linear:TPS79333-EP U6
+U 1 1 5F2E362A
+P 5550 1500
+F 0 "U6" V 5596 1705 50  0000 L CNN
+F 1 "TPS783" V 5505 1705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5550 1825 50  0001 C CIN
+F 3 "" H 5550 1550 50  0001 C CNN
+	1    5550 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5550 1800 5550 1850
+Wire Wire Line
+	5550 1850 5500 1850
+Wire Wire Line
+	5450 1850 5450 1800
+Wire Wire Line
+	5500 1850 5500 1950
+Connection ~ 5500 1850
+Wire Wire Line
+	5500 1850 5450 1850
+Text Label 5500 2100 0    50   ~ 0
+VDD_in
+Text Label 5950 1200 0    50   ~ 0
+GND
+$Comp
+L nrf52832_qfaa-SchDoc-rescue:C-Device-MorseCodeWatch-rescue C20
+U 1 1 5F322222
+P 5600 1050
+F 0 "C20" H 5715 1096 50  0000 L CNN
+F 1 "C 2.2uf" H 5715 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5638 900 50  0001 C CNN
+F 3 "~" H 5600 1050 50  0001 C CNN
+	1    5600 1050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5450 900  5450 1050
+Connection ~ 5450 1050
+Wire Wire Line
+	5450 1050 5450 1200
+$Comp
+L nrf52832_qfaa-SchDoc-rescue:C-Device-MorseCodeWatch-rescue C19
+U 1 1 5F374AB6
+P 5800 1950
+F 0 "C19" H 5915 1996 50  0000 L CNN
+F 1 "C 1uf" H 5915 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5838 1800 50  0001 C CNN
+F 3 "~" H 5800 1950 50  0001 C CNN
+	1    5800 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 1950 5650 1950
+Connection ~ 5500 1950
+Wire Wire Line
+	5500 1950 5500 2100
+Wire Wire Line
+	5950 1950 5950 1500
+Wire Wire Line
+	5950 1500 5850 1500
+Wire Wire Line
+	5950 1050 5950 1200
+Connection ~ 5950 1500
+Wire Wire Line
+	5750 1050 5950 1050
+Wire Wire Line
+	5550 1200 5950 1200
+Connection ~ 5950 1200
+Wire Wire Line
+	5950 1200 5950 1500
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 5F42401C
+P 5100 5700
+F 0 "J1" H 5150 6117 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 5150 6026 50  0000 C CNN
+F 2 "" H 5100 5700 50  0001 C CNN
+F 3 "~" H 5100 5700 50  0001 C CNN
+	1    5100 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5600 5400 5600
+Wire Wire Line
+	5400 5500 5700 5500
+Wire Wire Line
+	5700 5500 5700 5800
+Wire Wire Line
+	5700 5800 6200 5800
+Wire Wire Line
+	6200 5650 6200 5700
+Wire Wire Line
+	7400 5650 6200 5650
+Text Label 6200 5700 2    50   ~ 0
+SWDCLK
+Wire Wire Line
+	5550 5700 5550 5600
+Wire Wire Line
+	5550 5700 6200 5700
+Wire Wire Line
+	4900 5600 4650 5600
+Wire Wire Line
+	4650 5600 4650 5650
+Wire Wire Line
+	4900 5700 4650 5700
+Wire Wire Line
+	4650 5700 4650 5650
+Connection ~ 4650 5650
+Text Label 5400 5900 0    50   ~ 0
+P0.21
 $EndSCHEMATC
